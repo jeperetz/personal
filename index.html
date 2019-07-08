@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 	<head>
 		<title>Jonah's Page</title>
@@ -35,22 +34,13 @@
 			crossorigin="anonymous"
 		></script>
 
-		<!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
-
-		<style>
-			.jumbotron {
-				background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
-					url("images/background.jpg");
-				background-size: cover;
-				background-position: center;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
 	</head>
 
-	<body class="bg-dark">
+	<body>
 		<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-			<a class="navbar-brand" href="home.php"
-				><span id="top-left">Life in Color</span></a
+			<a class="navbar-brand" href="home.html"
+				><span id="top-left">Jonah Peretz</span></a
 			>
 			<button
 				class="navbar-toggler"
@@ -66,30 +56,101 @@
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="home.html"
+							><span class="color" id="teal">Home</span>
+							<span class="sr-only">(current)</span></a
+						>
+					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="login.php"
-							><span class="color" id="selected">Login</span></a
+						<a class="nav-link" href="team.html"
+							><span class="color">Team</span></a
 						>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="register.php"
-							><span class="color">Register</span></a
+						<a class="nav-link disabled" href="#"
+							><span class="color">About</span></a
 						>
 					</li>
 				</ul>
 			</div>
 		</nav>
 
-		<div class="jumbotron text-center">
-			<h1 class="display-4 text-white"><span id="titleHead"></span></h1>
+		<div class="jumbotron">
+			<h1 class="display-4"><span id="titleHead"></span></h1>
+			<hr class="my-4" />
+			<p class="lead">
+				A collection of my passions, projects, and interests for all to see.
+			</p>
+		</div>
+
+		<div class="row">
+			<div class="col-md-7">
+				<h2>SafeChat</h2>
+				<p>
+					For me, this project was an exploration of cryptography as well as my
+					first foray into full-stack web development. It was the culmination of
+					all the skills I'd learned in school up until that point, and my first
+					attempt at tackling a new topic entirely foreign to me.
+					<br /><br />
+					At a time when Facebook is reading users' messages and online privacy
+					has never been more important, I wanted to create something that
+					allowed people to communicate online with confidence that no third
+					party is reading their conversations. I implemented RSA encryption to
+					enable just that -- users of my site can encrypt sensitive information
+					and send it over any medium without fear of their message being read
+					by anyone not intended to view it. The site also permits unregistered
+					users a demo with fewer features if they don't want to create an
+					account.
+				</p>
+			</div>
+
+			<div class="col-md-5">
+				<img alt="splatter" src="images/splatter.jpg" />
+			</div>
+
+			<hr class="my-4" />
+		</div>
+
+		<hr class="my-4" />
+
+		<div class="row">
+			<div class="col-md-7 order-md-2">
+				<h2>Life in Color</h2>
+				<p>
+					My inspiration for Life in Color came from a journal I came across.
+					This journal had a twist: in the back there was a calendar with 365
+					contiguous squares. To the right of this was a color-code, with a
+					spectrum of colors and associated emotions. The idea for this journal
+					was that for each day you journaled, you also would pick a predominant
+					emotion for that day and color the calendar accordingly. At the end of
+					the year, you could reflect on the past year and find trends in your
+					emotions.
+					<br /><br />
+					My site is similar. Every day you make a journal entry that is
+					assigned to a spot on your calendar "Spectrum" page. However, rather
+					than picking an emotion manually, I use sentiment analysis to assign
+					emtions to your daily entries automatically. Building this project was
+					incredibly rewarding, and allowed me combine my technical skills with
+					my creativity to create something totally new.
+				</p>
+			</div>
+
+			<div class="col-md-5">
+				<img alt="second" src="images/second.jpg" />
+			</div>
+		</div>
+
+		<div id="footer">
+			<p class="m-2">Jonah Peretz | Computer Science, B.S. | USC</p>
 		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 
 		<script>
 			var options = {
-				strings: ["Welcome to Jonah's page!"],
+				strings: ["Welcome to my page!"],
 				typeSpeed: 30,
 				backSpeed: 30,
 				loop: false,
